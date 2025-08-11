@@ -1,4 +1,7 @@
 <!doctype html>
+/* 如果你有全站樣式，這行要保留 */
+import "../styles/global.css";
+---
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
@@ -13,6 +16,10 @@
       gtag('js', new Date());
       gtag('config', 'G-6RVD6MSN9V');
     </script>
+
+    <style>
+      html, body { margin:0; width:100%; height:100%; }
+    </style>
   </head>
   <body>
     <slot />
